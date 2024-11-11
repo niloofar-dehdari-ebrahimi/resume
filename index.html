@@ -1,120 +1,290 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Niloofar Dehdari Ebrahimi</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/main.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alireza Sadeghi</title>
+    <meta name="description" content="Niloofar Dehdari Ebrahimi's Online Resume">
+    <meta name="keywords"
+        content="Niloofar Dehdari Ebrahimi, Resume, Shiraz, Shiraz University of Medical Sciences, Medical Doctor, Reserach, Meta-Analysis">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/css/all.css">
+    <style>
+        @media (max-width: 500px) {
+            #user-name {
+                font-size: 30px;
+            }
+        }
+    </style>
+    <meta name="google-site-verification" content="b7Kuo6_S15_r6cs_IiF5j9I8XMT-Oa1nm19Ab81FwHg" />
+</head>
+
+<body>
+    <div id="container--main">
+
+        <section id="wrapper--hero" class="section--page">
+            <img id="profile-pic" src="" alt="Profile Picture">
+
+            <script>
+                window.addEventListener('DOMContentLoaded', function () {
+                    var profilePics = ['profile_pic.png', 'profile_pic2.png'];
+                    var randomIndex = Math.floor(Math.random() * profilePics.length);
+                    var profilePic = document.getElementById('profile-pic');
+                    profilePic.src = './assets/images/' + profilePics[randomIndex];
+                });
+            </script>
+
+            <div>
+                <h1 style="font-size: 23px;"id="user-name">Niloofar Dehdari Ebrahimi</h1>
+                <p id="bio"><b>MD  </b> <br><br><b>General practitioner</b> and <b>researcher</b>, at Shiraz University of Medical Sciences, Shiraz,
+                    Iran.<br>Extremely interested in <b>clinical research design</b>, and <b> regenrative medicine</b>.</a>
+
+                </p>
+                <p id="email">📧 <a href="mailto:niloofar.dehdari6021@gmail.com"
+                        target="_blank">niloofar.dehdari6021@gmail.com</a></p>
+            </div>
+        </section>
+
+        <section class="section--page">
+            <div id="socials--list">
+                <a href="https://scholar.google.com/citations?user=vkE9-UQAAAAJ&hl=en" target="_blank"><i
+                        class="fa-brands fa-google-scholar"></i></a>
+                <a href="https://orcid.org/0000-0002-9866-8361" target="_blank"><i class="fa-brands fa-orcid"></i></a>
+                <a href="https://www.linkedin.com/in/niloofar-dehdari-ebrahimi-md/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.researchgate.net/profile/Niloofar-Dehdari-Ebrahimi" target="_blank"><i
+                        class="fa-brands fa-researchgate"></i></a>
+                <a href="./assets/Resume - Niloofar Dehdari Ebrahimi CV.pdf" target="_blank">
+                    <div class="framed-text">Download Resume</div>
+                </a>
+            </div>
+        </section>
+
         <style>
-            @media (max-width: 700px) {
-                #user-name {
-                    font-size: 20px;
+            @media (max-width: 550px) {
+                #socials--list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
             }
-        
-            @media (min-width: 701px) {
-                #user-name {
-                    font-size: 30px;
-                }
-            }
-        </style>    </head>
-    <body>
-        <div id="container--main">
+        </style>
 
-            <section id="wrapper--hero" class="section--page">
-                <img id="profile-pic" src="./assets/images/profile_pic.png">
+        <section class="section--page">
+            <h2>Skills & Qualifications</h2>
+            <ul id="qualifications--list">
+                <li>✔ <b>Analysis</b><br> correlations · regression · survival· meta-analysis</li><br>
+                <li>✔ <b>Software & Programming</b><br> <i class="fa-brands fa-r-project"></i> · Shiny apps · Stata · SPSS · Prezi ·
+                    GraphPad · MS&nbsp;Word · MS&nbsp;PowerPoint · MS&nbsp;Excel ·
+                    Adobe&nbsp;Photoshop · Adobe&nbsp;Illustrator · MS&nbsp;Visio ·</li><br>
+                <li>✔ <b>Epidemiology</b><br> trials · cohorts · case-controls · case-cohort · nested&nbsp;case-controls
+                    · diagnostic&nbsp;test&nbsp;accuracy · research&nbsp;leadership </li>
+            </ul>
+        </section>
+        <div class="line-break"></div>
+        <section class="section--page">
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var dropdownBtn = document.querySelector('.dropdown-btn');
+                dropdownBtn.addEventListener('click', function () {
+                    dropdownBtn.classList.toggle('active');
+                });
+            });
+        </script>
+        <div class="line-break"></div>
+        <section id="work-history-wrapper" class="section--page">
+            <h2>Work History</h2>
+            <div class="card--work-history">
+                <strong>✔ General Practitioner<p class="work-place">Shiraz University of Medical Sciences</p></strong>
+                <p>2022 - Present</p>
+                <strong>✔ Medical Intern<p class="work-place">Shiraz University of Medical Sciences</p></strong>
+                <p>2021 – 2023</p>
+                <strong>✔ Clinical Researcher<p class="work-place">Shiraz University of Medical Sciences</p></strong>
+                <p>2020 - Present</p>
+            </div>
+        </section>
+        <div class="line-break"></div>
 
-                <div>
-                    <h1 id="user-name">Niloofar Dehdari Ebrahimi</h1>
-                    <p id="bio"><b>MD</b> <br><br>General practitioner and researcher at Shiraz University of Medical Sciences, Shiraz, Iran.<br>Extremely interested in clinical research design and regenrative medicine and cell biology.</a></p>
-                    <p id="email">✉️ <a href="mailto:niloofar.dehdari6021@gmail.com" target="_blank">niloofar.dehdari6021@gmail.com</a></p>
-                </div>  
-            </section>
+        <section id="work-history-wrapper" class="section--page">
 
-            <section class="section--page">
-                <div id="socials--list">
-                    <a href="https://scholar.google.com/citations?user=vkE9-UQAAAAJ&hl=en" target="_blank">Google Scholar</a>
-                    <a href="https://orcid.org/0000-0002-9866-8361" target="_blank">ORCiD</a>
-                    <a href="https://www.linkedin.com/in/niloofar-dehdari-ebrahimi-md/" target="_blank">Linkedin</a>
-                    <a href="https://www.researchgate.net/profile/Niloofar-Dehdari-Ebrahimi" target="_blank">ResearchGate</a>
-                    <a href="./assets/Niloofar Dehdari Ebrahimi CV.pdf" target="_blank">Download Resume (PDF)</a>
+            <h2>Education</h2>
+
+
+            <div class="card--work-history">
+                <strong>✔ Doctor of medicine<p class="work-place">Shiraz University of Medical Sciences</p></strong>
+                <p>2016 - 2023</p>
+
+            </div>
+
+        </section>
+        <div class="line-break"></div>
+        <section class="section--page">
+            <h2>Peer-Reviews</h2>
+            <p id="peer-reviews">More than 10 peer-reviews for</p>
+
+            <div id="wrapper--techstack__items">
+                <div class="card--techstack"><span>PLOS ONE</span></div>
+                <div class="card--techstack"><span>Annals of Medicine and Surgery</span></div>
+                <div class="card--techstack"><span>Health Science Reports</span></div>
+
+                <br><br>
+            </div>
+        </section>
+        <div class="line-break"></div>
+        <section class="section--page">
+            <h2>Publications</h2>
+
+            <ol class="custom-list">
+
+                <div class="card--project">
+                    <li> <a href="https://doi.org/10.3389/fendo.2023.1202560"
+                            target="_blank">Protective effects of melatonin against oxidative stressinduced by metabolic disorders in the male reproductive system: a systematic review and meta-analysis ofrodent models</a><br> <i>Frontiers in endocrinology· 2023</i><br>
+                        <p class="role">First Author</p>
+                    </li>
+                     </div>
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.3389/fendo.2023.1123999"
+                            target="_blank">Protective effects of melatonin against physicalinjuries to testicular tissue: A systematic review and meta-analysis of animal models</a><br> <i>Frontiers in endocrinology· 2023</i><br>
+                        <p class="role">First Author</p>
+                    </li>
                 </div>
-            </section>
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.3389/fendo.2023.1119553"
+                            target="_blank">Protective effects of melatonin against the toxic effects ofenvironmental pollutants and heavy metals on testicular tissue: A systematic review and meta-analysis ofanimal studies</a><br> <i>Frontiers in endocrinology· 2023</i><br>
+                        <p class="role">First Author</p>
+                    </li>
+                </div>
+
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1097/MS9.0000000000002620"
+                            target="_blank">Radioprotective effects of melatonin therapy against testicular oxidative stress: a systematic review and meta-analysis of rodent models</a><br> <i>Annals of Medicine and Surgery· 2024</i><br>
+                        <p class="role">First Author</p>
+                    </li>
+                </div>
+
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.3389/fendo.2023.1184745"
+                            target="_blank">Protective effects of exogenous melatonin therapy againstoxidative stress to male reproductive tissue caused by anti-cancer chemical and radiation therapy: asystematic review and meta-analysis of animal studies</a><br> <i>Frontiers in endocrinology· 2023</i><br>
+                        <p class="role">First Author</p>
+                    </li>
+                </div>
+
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1002/hsr2.70148"
+                            target="_blank">Effects of l‐carnitine on frailty status in patients with liver cirrhosis: A randomized‐controlled trial</a><br> <i>Health Science Reports· 2024</i><br>
+                        <p class="role">Corresponding author</p>
+                    </li>
+                </div>
+
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1177/10815589221150645"
+                            target="_blank">Correspondence on "Prognostic significance of complementfactors in severely ill patients with COVID-19"</a><br> <i>Journal of Investigative Medicine· 2023</i><br>
+                        <p class="role">Co-first Author</p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1007/s15010-024-02244-7"
+                            target="_blank">Estimates of global and regional prevalence of Helicobacter pylori infection among individuals with obesity: a systematic review and meta-analysis</a><br> <i>Infection· 2024</i><br>
+                        <p class="role">Corresponding author</p>
+                    </li>
+                </div>
+
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1080/17474086.2024.2385482"
+                            target="_blank">The medication usage pattern and prevalence of polypharmacy among patients with sickle cell disease: a population-based study in southern Iran</a><br> <i>Expert Review of Hematology· 2024</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1111/jcmm.18529"
+                            target="_blank">The effects of simvastatin‐loaded nanoliposomes on human multilineage liver fibrosis microtissue</a><br> <i>Journal of Cellular and Molecular Medicine· 2024</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1186/s13287-024-03829-7"
+                            target="_blank">Comparative effectiveness of mesenchymal stem cell versus bone-marrow mononuclear cell transplantation in heart failure: a meta-analysis of randomized controlled trials</a><br> <i>Stem Cell Research & Therapy· 2024</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1111/jcmm.18140"
+                            target="_blank">GDF11 : An emerging therapeutic target for liver diseases and fibrosis</a><br> <i>Journal of Cellular and Molecular Medicine· 2024</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1002/hsr2.2212"
+                            target="_blank">Electrocardiographic findings in patients with sickle cell disease: A protocol for systematic review and meta‐analysis</a><br> <i>Health Science Reports· 2024</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.4330/wjc.v14.i12.617"
+                            target="_blank">Conduction system disorders and electrocardiographic findings in COVID-19 deceased patients in 2021,Shiraz, Iran</a><br> <i>World journal of cardiology· 2022</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.5812/archcid-122525"
+                            target="_blank">The Efficacy of Ivermectin and Metronidazolevs. Standard Treatment Protocols on Outcomes of COVID-19 in Hospitalized Patients: A Triple-BlindedRandomized Controlled Trial</a><br> <i>Archives of Clinical Infectious Diseases· 2022</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.5812/semj-128688"
+                            target="_blank">ECG Prediction of Mortality in COVID-19 Patients bySokolow-Lyon Voltage</a><br> <i>Shiraz E-Medical Journal· 2022</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1002/hsr2.1167"
+                            target="_blank">Effects of l-arginine supplementation inpatients with sickle cell disease: A systematic review and meta-analysis of clinical trials</a><br> <i>Health science reports.· 2023</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1002/cam4.6353"
+                            target="_blank">Correspondence on “Salivary biomarkers in breast cancer diagnosis: A systematic review and diagnostic meta‐analysis</a><br> <i>Cancer Medicine· 2023</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1002/hsr2.1505"
+                            target="_blank">Global prevalence of Helicobacter pylori infection among individuals with obesity: A protocol for a systematic review and meta-analysis</a><br> <i>Health science reports.· 2023</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1002/hsr2.1505"
+                            target="_blank">Prevalence of body dysmorphic disorder in rhinoplasty candidates: A systematic review and meta-analysis</a><br> <i>Health science reports.· 2023</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.1002/ccr3.7638"
+                            target="_blank">COVID‐19 infection and Leser–Trelat sign: Is there an association?</a><br> <i>Clinical Case Reports· 2023</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+<div class="card--project">
+                    <li> <a href="https://doi.org/10.3389/fpsyt.2023.1182345"
+                            target="_blank">Role of FKBP5 and its genetic mutations in stress-induced psychiatric disorders: an opportunity for drug discovery</a><br> <i>Frontiers in Psychiatry· 2023</i><br>
+                        <p class="role"></p>
+                    </li>
+                </div> 
+
+                
             
-            <style>
-                @media (max-width: 550px) {
-                    #socials--list {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                    }
-                }
+            </ol>
 
-            </style>
+        </section>
 
-            <section class="section--page">
-                <h2>Skills & Qualifications</h2>
-                <ul id="qualifications--list">
-                    <li>✔️ <b>Clinical research:</b> study design · scientific writing · teamwork and leadership · systematic review and meta-analysis</li>
-                    <li>✔️ <b>Computer:</b> general data analytics and visualization tools such as Excel and GraphPad</li>
-                    <li>✔️ <b>Laboratory techniques:</b> cell culture · 3D scaffold fabrication (liver and cartilage) · DNA extraction · PCR · gel electrophoresis</li>
-                </ul>
-            </section>
 
-            <section id="work-history-wrapper" class="section--page">
-                <h2>Work History</h2>
+    </div>
 
-                <div class="line-break"></div>
-                <div class="card--work-history">
-                    <strong>🩺 General practitioner</strong>
-                    <p>2023 - Present</p>
-                    <strong>🩺 Medical intern</strong>
-                    <p>2021 – 2023</p>
-                    <strong>🩺 Clinical researcher</strong>
-                    <p>2022 - Present</p>
-                </div>
-            </section>
-            <section id="work-history-wrapper" class="section--page">
-                <h2>Education</h2>
-                <div class="line-break"></div>
+</body>
 
-                <div class="card--work-history">
-                    <strong>🩺 Doctor of medicine</strong>
-                    <p>2016 - 2023</p>
-                </div>
-
-            </section>
-
-            <section class="section--page">
-                <h2>Publications</h2>
-
-                <ol class="custom-list"> 
- 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.3389/fendo.2023.1202560" target="_blank">Protective effects of melatonin against oxidative stress-induced by metabolic disorders in the male reproductive system: a systematic review and meta-analysis of rodent models".</a><br>Frontiers in endocrinology · 2023<br> <p class="role">First Author</p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.3389/fendo.2023.1119553" target="_blank">Protective effects of melatonin against the toxic effects of environmental pollutants and heavy metals on testicular tissue: A systematic review and meta-analysis of animal studies</a><br>Frontiers in endocrinology · 2023<br> <p class="role">First Author</p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.3389/fendo.2023.1123999" target="_blank">Protective effects of melatonin against physical physical to testicular tissue: A systematic review and meta-analysis of animal models</a><br>Frontiers in endocrinology · 2023<br> <p class="role">First Author</p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.3389/fendo.2023.1184745" target="_blank">Protective effects of exogenous melatonin therapy against oxidative stress to male reproductive tissue caused by anti-cancer chemical and radiation therapy: a systematic review and meta-analysis of animal studies</a><br>Frontiers in endocrinology · 2023<br> <p class="role">First Author</p> </li> </div> 
-                    
-                    <div class="card--project">	<li> <a href="https://doi.org/10.1177/10815589221150645" target="_blank">Correspondence on "Prognostic significance of complement factors in severely ill patients with COVID-19"</a><br>Journal of Investigative Medicine · 2023<br> <p class="role">Co-first Author</p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.4330/wjc.v14.i12.617" target="_blank">Conduction system disorders and electrocardiographic findings in COVID-19 deceased patients in 2021,Shiraz, Iran</a><br>World journal of cardiology · 2022<br> <p class="role"></p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.5812/archcid-122525" target="_blank">The Efficacy of Ivermectin and Metronidazolevs. Standard Treatment Protocols on Outcomes of COVID-19 in Hospitalized Patients: A Triple-BlindedRandomized Controlled Trial</a><br>Archives of Clinical Infectious Diseases · 2022<br> <p class="role"></p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.5812/semj-128688" target="_blank">ECG Prediction of Mortality in COVID-19 Patients bySokolow-Lyon Voltage</a><br>Shiraz E-Medical Journal · 2022<br> <p class="role"></p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.1002/hsr2.1167" target="_blank">Effects of l-arginine supplementation in patients with sickle cell disease: A systematic review and meta-analysis of clinical trials</a><br>Health science reports. · 2023<br> <p class="role"></p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.1002/cam4.6353" target="_blank">Correspondence on “Salivary biomarkers in breast cancer diagnosis: A systematic review and diagnostic meta‐analysis”</a><br>Cancer Medicine · 2023<br> <p class="role"></p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.1002/hsr2.1505" target="_blank">Global prevalence of Helicobacter pylori infection among individuals with obesity: A protocol for a systematic review and meta-analysis</a><br>Health science reports. · 2023<br> <p class="role"></p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.1002/hsr2.1505" target="_blank">Prevalence of body dysmorphic disorder in rhinoplasty candidates: A systematic review and meta-analysis</a><br>Health science reports. · 2023<br> <p class="role"></p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.1002/ccr3.7638" target="_blank">COVID‐19 infection and Leser–Trelat sign: Is there an association?</a><br>Clinical Case Reports · 2023<br> <p class="role"></p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.3389/fpsyt.2023.1182345" target="_blank">Role of FKBP5 and its genetic mutations in stress-induced psychiatric disorders: an opportunity for drug discovery</a><br>Frontiers in Psychiatry · 2023<br> <p class="role"></p> </li> </div> 
-                    <div class="card--project">	<li> <a href="https://doi.org/10.1111/jcmm.18140" target="_blank">GDF11: An emerging therapeutic target for liver diseases and fibrosis</a><br>Journal of Cellular and Molecular Medicine · 2024<br> <p class="role"></p> </li> </div>
-                                          
-                    </ol>
-
-            </section>
-
-       
-        </div>
-
-    </body>
 </html>

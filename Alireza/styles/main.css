@@ -44,12 +44,6 @@ li {
     font-size: 1em;
 }
 
-h1 {
-  font-size: 10px;
-}
-
-
-
 a {
     text-decoration: none;
     color: var(--mainLinkColor);
